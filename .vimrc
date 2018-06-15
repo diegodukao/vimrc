@@ -108,6 +108,10 @@ set mouse=c
 "buffer list and change between buffers (jetpack)
 nnoremap gb :ls<CR>:b<Space>
 
+"Marking unused whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
 ""relative line numbers
 "set number
 "set relativenumber
