@@ -67,10 +67,9 @@ au BufNewFile,BufRead *.js, *.html, *.css
 "UTF-8 support
 set encoding=utf-8
 
-"ignore files in NERDTree
+"NERDTree ignore files
 let NERDTreeIgnore=['\.pyc$', '\~$', '__pycache__/']
-
-"Keymapping
+"NERDTtree toggle Keymapping
 map <F4> :NERDTreeToggle<CR>
 
 "split navigations
@@ -101,3 +100,7 @@ augroup myCmds
 au!
 autocmd VimEnter * silent !echo -ne "\e[2 q"
 augroup END
+
+"disabling gui options
+set guioptions=
+set mouse=c
