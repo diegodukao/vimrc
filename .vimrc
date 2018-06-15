@@ -90,6 +90,8 @@ nnoremap <space> za
 let python_highlight_all=1
 syntax on
 
+"executing pyflakes with python3
+let g:syntastic_python_pyflakes_exe = 'python3 -m pyflakes'
 
 "different cursor for modes in terminal
 let &t_SI = "\e[6 q"
