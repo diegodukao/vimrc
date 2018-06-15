@@ -67,6 +67,9 @@ au BufNewFile,BufRead *.js, *.html, *.css
 "UTF-8 support
 set encoding=utf-8
 
+"ignore files in NERDTree
+let NERDTreeIgnore=['\.pyc$', '\~$', '__pycache__/']
+
 "Keymapping
 map <F4> :NERDTreeToggle<CR>
 
