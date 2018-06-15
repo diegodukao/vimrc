@@ -19,6 +19,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'kien/ctrlp.vim'
+" Color Plugins
+Plugin 'jnurmine/Zenburn'  " Terminal mode
+Plugin 'altercation/vim-colors-solarized'  " GUI mode
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,6 +37,16 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+"Choosing correct colorscheme
+if has('gui_running')
+    set background=dark
+    colorscheme solarized
+    "enabling solarized theme change with f5
+    call togglebg#map("<F5>")
+else
+    colorscheme zenburn
+endif
 
 "Python indentation
 au BufNewFile,BufRead *.py
