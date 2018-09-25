@@ -72,11 +72,11 @@ let NERDTreeIgnore=['\.pyc$', '\~$', '__pycache__/']
 "NERDTtree toggle Keymapping
 map <F4> :NERDTreeToggle<CR>
 
-"split navigations
-nnoremap <C-H> <C-W><C-H>
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
+"Arrows doing split navigations
+nnoremap <Left> <C-W><C-H>
+nnoremap <Down> <C-W><C-J>
+nnoremap <Up> <C-W><C-K>
+nnoremap <Right> <C-W><C-L>
 
 "code folding
 set foldmethod=indent
