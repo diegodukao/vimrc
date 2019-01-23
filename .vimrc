@@ -115,9 +115,11 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 "Remapping Caps Lock/Escape
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+"
 ""relative line numbers
-"set number
-"set relativenumber
+set number
+set relativenumber
+
 ""moving between virtual lines
 "noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 "noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
