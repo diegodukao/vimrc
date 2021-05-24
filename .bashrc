@@ -126,6 +126,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
 # virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
+
+eval "$(direnv hook bash)"
